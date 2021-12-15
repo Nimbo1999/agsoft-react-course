@@ -1,0 +1,31 @@
+.main-application {
+    display: flex;
+    width: 100%;
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 1em;
+
+        & > div {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: center;
+
+            h2 {
+                margin-left: 1em;
+                color: $color-text-gray1;
+            }
+        }
+
+        nav {
+            display: flex;
+
+            ul {
+                list-style: none;
+                display: flex;
+            }
+        }
+    }
+}
