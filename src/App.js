@@ -1,5 +1,9 @@
+import { Routes, Route } from 'react-router-dom';
+
 import ListItem from './components/ListItem/ListItem';
 import ShoppingBag from './assets/icons/ShoppingBag';
+
+import routes from './routes';
 
 function App() {
     return (
@@ -18,6 +22,12 @@ function App() {
                     </ul>
                 </nav>
             </header>
+
+            <Routes>
+                {routes.map(props => (
+                    <Route {...props} />
+                ))}
+            </Routes>
         </div>
     );
 }
