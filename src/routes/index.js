@@ -1,26 +1,28 @@
+import ROUTES_CONSTANTS from '../constants/route';
+
 const routes = [
     {
-        path: '/',
+        path: ROUTES_CONSTANTS.HOME,
         element: <h1>Home page</h1>
     },
     {
-        path: '/categories',
+        path: ROUTES_CONSTANTS.CATEGORIES,
         element: <h1>Categories</h1>
     },
     {
-        path: '/categories/:token',
+        path: ROUTES_CONSTANTS.CATEGORY,
         element: <h1>Categorie</h1>
     },
     {
-        path: '/cart',
+        path: ROUTES_CONSTANTS.CART,
         element: <h1>Cart</h1>
     },
     {
-        path: '/signin',
+        path: ROUTES_CONSTANTS.SIGN_IN,
         element: <h1>Sign in</h1>
     },
     {
-        path: '/signup',
+        path: ROUTES_CONSTANTS.SIGN_UP,
         element: <h1>Sign Up</h1>
     }
 ];
