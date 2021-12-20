@@ -28,6 +28,14 @@ header {
         ul {
             list-style: none;
             display: flex;
+
+            a {
+                color: $color-text-gray2;
+                transition: color 200ms linear;
+                &:hover {
+                    color: $color-text-gray4;
+                }
+            }
         }
     }
 }
