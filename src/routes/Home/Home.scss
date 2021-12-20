@@ -1,0 +1,10 @@
+.home-page-container {
+    display: flex;
+    width: 100%;
+
+    .discover-section {
+        display: flex;
+        flex: 1;
+        padding: 4em;
+    }
+}

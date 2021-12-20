@@ -1,9 +1,10 @@
 import ROUTES_CONSTANTS from '../constants/route';
+import HomeContainer from './Home/Home';
 
 const routes = [
     {
         path: ROUTES_CONSTANTS.HOME,
-        element: <h1>Home page</h1>
+        element: <HomeContainer />
     },
     {
         path: ROUTES_CONSTANTS.CATEGORIES,
