@@ -5,19 +5,7 @@ import Header from './components/Header/Header';
 
 import routes from './routes';
 
-import { categoriesDocs } from './firebase';
-
 function App() {
-    useEffect(() => {
-        const test = async () => {
-            const result = await categoriesDocs;
-            console.log({ result });
-            result.forEach(doc => console.log({ doc: doc.data() }));
-        };
-
-        // test();
-    }, []);
-
     return (
         <div className="main-application">
             <Header />

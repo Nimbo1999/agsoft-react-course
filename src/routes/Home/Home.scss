@@ -3,8 +3,20 @@
     width: 100%;
 
     .discover-section {
-        display: flex;
         flex: 1;
+        display: flex;
+        flex-direction: column;
+
         padding: 4em;
+
+        .discover-content {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            margin-top: 2rem;
+        }
     }
 }

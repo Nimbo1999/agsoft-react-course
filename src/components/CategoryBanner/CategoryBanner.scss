@@ -1,0 +1,23 @@
+.category-banner {
+    display: flex;
+
+    position: relative;
+
+    height: 350px;
+    background-color: red;
+    background-size: cover;
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: .5rem;
+        background-color: rgba($color-text-gray1, .5);
+
+        p {
+            font-size: 1.5rem;
+            color: $color-white;
+        }
+    }
+}

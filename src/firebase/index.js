@@ -16,6 +16,15 @@ const db = getFirestore(app);
 
 const categoriesCollection = collection(db, 'categories');
 
-const categoriesDocs = getDocs(categoriesCollection);
+const _categoriesDocs = getDocs(categoriesCollection);
 
-export { categoriesDocs };
+const getCategoriesCollection = async () => {
+    const categories = [];
+    const categoriesDocuments = await _categoriesDocs;
+    categoriesDocuments.forEach(document =>
+        categories.push({ ...document.data(), id: document.id })
+    );
+    return categories;
+};
+
+export { getCategoriesCollection };
