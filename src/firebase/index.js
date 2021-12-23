@@ -27,4 +27,13 @@ const getCategoriesCollection = async () => {
     return categories;
 };
 
-export { getCategoriesCollection };
+const _productsData = id => getDocs(collection(categoriesCollection, id, 'products'));
+
+const getCategoryProducts = async id => {
+    const products = [];
+    const productsResponse = await _productsData(id);
+    productsResponse.forEach(documents => products.push({ ...documents.data(), id: documents.id }));
+    return products;
+};
+
+export { getCategoriesCollection, getCategoryProducts };

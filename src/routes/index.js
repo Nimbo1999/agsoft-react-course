@@ -1,5 +1,7 @@
 import ROUTES_CONSTANTS from '../constants/route';
+
 import HomeContainer from './Home/Home';
+import CategoryContainer from './Category/Category';
 
 const routes = [
     {
@@ -8,11 +10,11 @@ const routes = [
     },
     {
         path: ROUTES_CONSTANTS.CATEGORIES,
-        element: <h1>Categories</h1>
+        element: <h1>categories</h1>
     },
     {
-        path: ROUTES_CONSTANTS.CATEGORY,
-        element: <h1>Categorie</h1>
+        path: ROUTES_CONSTANTS.CATEGORY + ROUTES_CONSTANTS.TOKEN,
+        element: <CategoryContainer />
     },
     {
         path: ROUTES_CONSTANTS.CART,
